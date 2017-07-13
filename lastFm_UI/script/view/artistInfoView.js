@@ -1,0 +1,42 @@
+function artistInfoView(response) {
+  var artistInfo = response.artist;
+  document.querySelector('.search').innerHTML = '';
+  var content = document.querySelector('.content');
+  content.innerHTML = '';
+  var div = document.createElement('div');
+  div.className = 'info';
+  var par = document.createElement('p');
+  var header = document.createElement('h1');
+  header.className = 'artistName';
+  header.innerHTML = artistInfo.name;
+  par.appendChild(header);
+  var likes = document.createElement('ul');
+  likes.className = 'likes';
+  var likesCount = getRandomLikes();
+  for (var i = 0; i < likesCount; i++) {
+    var like = document.createElement('li');
+    like.className = 'likes';
+    likes.appendChild(like);
+  }
+  par.appendChild(likes);
+  content.appendChild(par);
+  var image = document.createElement('img');
+  var imageSource = artistInfo.image[3]['#text'];
+  image.setAttribute('src', imageSource);
+  image.setAttribute('alt', artistInfo.name);
+  image.className = 'pic';
+  div.appendChild(image);
+  var paragraph = document.createElement('p');
+  paragraph.className = 'artistInfo';
+  var biography = artistInfo.bio !== undefined ? artistInfo.bio.summary : 'N/A';
+  paragraph.innerHTML = biography;
+  div.appendChild(paragraph);
+  content.appendChild(div);
+  var albumsHeader = document.createElement('h2');
+  albumsHeader.innerHTML = 'Albums';
+  content.appendChild(albumsHeader);
+  var albums = document.createElement('div');
+  albums.className = 'albums';
+  content.appendChild(albums);
+  getAlbumsList(artistInfo.name);
+};

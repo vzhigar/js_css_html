@@ -1,0 +1,229 @@
+html,
+body {
+  width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0;
+  font-family: sans-serif;
+  background: #f3f3f3;
+}
+
+.wrapper {
+  min-height: 100%;
+  width: inherit;
+}
+
+header {
+  position: fixed;
+  height: 50px;
+  margin-bottom: -51px;
+  width: inherit;
+  line-height: 50px;
+  background: #1464F6;
+  color: white;
+  font-size: 24px;
+  text-indent: 18px;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+footer {
+  position: absolute;
+  height: 50px;
+  width: inherit;
+  margin-top: -51px;
+  line-height: 50px;
+  background: #0844A4;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  border-top: 1px solid #d3d3d3;
+}
+
+.lastfm {
+  cursor: pointer;
+}
+
+.search {
+  padding-top: 50px;
+  width: inherit;
+}
+
+.content {
+  width: inherit;
+  font-size: 20px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.container {
+  vertical-align: top;
+  margin: 10px;
+  display: inline-block;
+  height: 370px;
+  width: 31%;
+  overflow: hidden;
+}
+
+.artist {
+  font-size: 12px;
+  color: black;
+  top: 200px;
+  left: 20px;
+}
+
+#artist {
+  display: inline-block;
+  border: 1px solid #1464F6;
+  border-radius: 4px 0 0 4px;
+  height: 21px;
+  width: 250px;
+  text-align: center;
+}
+
+#searchButton {
+  background: #1464F6;
+  color: white;
+  border: 1px solid #1464F6;
+  border-radius: 0 4px 4px 0;
+  height: 25px;
+  width: 75px;
+  text-align: center;
+}
+
+.label {
+  width: 300px;
+  height: 300px;
+  display: block;
+  margin: 5px auto;
+  cursor: pointer;
+  border: 1px solid #d3d3d3;
+  text-align: center;
+  line-height: 300px;
+}
+
+.searchName {
+  margin: 0px 35px;
+}
+
+.pic {
+  float: left;
+  margin: 0px 10px 10px 5px;
+  border: 1px solid #d3d3d3;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  line-height: 300px;
+}
+
+.artistInfo {
+  text-align: justify;
+  text-indent: 10px;
+}
+
+.info {
+  min-height: 310px;
+}
+
+.albumInf {
+  vertical-align: text-bottom;
+  text-align: left;
+  margin: 10px;
+}
+
+.albums {
+  width: inherit;
+  margin: auto;
+  align-content: center;
+}
+
+.album {
+  display: inline-block;
+  width: 200px;
+  height: 230px;
+  vertical-align: top;
+  overflow: hidden;
+}
+
+.albumName {
+  margin: 15px;
+  font-size: 12px;
+  text-align: left;
+}
+
+.albumImage {
+  width: 174px;
+  height: 174px;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  line-height: 174px;
+  text-align: center;
+}
+
+.listItem {
+  text-align: left;
+  text-indent: 10px;
+}
+
+.track {
+  text-decoration: none;
+  color: black;
+  font-family: monospace;
+  font-weight: 600;
+}
+
+.artistName {
+  display: inline-block;
+  width: 85%;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  vertical-align: bottom;
+}
+
+ul.likes {
+  padding-left: 0;
+  display: inline-block;
+  width: 15%;
+  list-style: none;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+ul li.likes {
+  display: inline;
+}
+
+ul li.likes:before {
+  display: inline;
+  content: '\2665';
+  color: #1464F6;
+}
+
+.center {
+  text-align: center;
+}
+
+ul.pagination {
+  display: inline-block;
+  width: inherit;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pagination li {
+  display: inline;
+}
+
+.pagination a {
+  color: black;
+  text-decoration: none;
+  padding: 8px 16px;
+  float: left;
+  border: 1px solid #d3d3d3;
+  transition: background-color .3s;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: -1px;
+}
